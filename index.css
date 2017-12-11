@@ -82,11 +82,11 @@ sidebar li .ico_up .ico {
 }
 
 .common-level-1 p a {
-    padding-left: 10px;
+    padding-left: 2em;
 }
 
 .common-level-2 p a {
-    padding-left: 20px;
+    padding-left: 4em;
 }
 
 .level0 {
@@ -115,5 +115,6 @@ article {
     left: 290px;
     img {
         max-width: 100%;
+        border: 1px solid #ededed;
     }
 }
