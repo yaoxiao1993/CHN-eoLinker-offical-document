@@ -1,3 +1,4 @@
+
 (function() {
     'use strict';
 
@@ -14,14 +15,14 @@
             var template = {
                 target: decodeURI(window.location.search).split('?target=')[1]
             }
-            editormd.emoji = {
-                path: "http://www.emoji-cheat-sheet.com/graphics/emojis/",
-                ext: ".png"
-            };
-
-            editormd.twemoji = {
-                path: "http://twemoji.maxcdn.com/72x72/",
-                ext: ".png"
+            editormd.emoji = {      
+                path: "http://www.emoji-cheat-sheet.com/graphics/emojis/",     
+                ext: ".png"        
+            };     
+       
+            editormd.twemoji = {       
+                path: "http://twemoji.maxcdn.com/72x72/",      
+                ext: ".png"        
             };
             if (template.target) {
                 var http = new XMLHttpRequest();
@@ -30,10 +31,10 @@
                 http.onload = function() {
                     editormd.markdownToHTML("article-container-js", {
                         markdown: http.responseText,
-                        sequenceDiagram: true,
-                        flowChart: true,
-                        emoji: true,
-                        tex: true,
+                        sequenceDiagram: true,      
+                        flowChart: true,       
+                        emoji: true,       
+                        tex: true,     
                         taskList : true
                     })
                 }
@@ -43,14 +44,14 @@
 
         },
         paint: function(arg, elem) {
-            var href = decodeURI(window.location.href).replace(/\//g, '.');
+            var href =  decodeURI(window.location.href).replace(/\//g, '.');
             var isCurrent = eval('/' + arg.sref + '/').test(href);
             if (isCurrent && arg.href) {
                 window.document.title = arg.title + '-eoLinker官方支持手册';
             }
             var template = {
                 html: '<li class="common-level-' + arg.level + (isCurrent ? (arg.href ? (' elem-active level' + arg.level) : (' level' + arg.level)) : ' hidden') + '" >' +
-                    '<p level="' + arg.level + '" class="' + (isCurrent ? 'ico_up' : 'ico_down') + '" onclick="eocourse.sidebarClass.click(this)"><a ' + (arg.href ? ('onclick="eocourse.sidebarClass.router(\'' + arg.href + '\')"') : '') + '>' + arg.title + (arg.childList ? '<span class="pull-right  ico"></span>' : '') + '</a></p>' +
+                '<p level="' + arg.level + '" class="' + (isCurrent ? 'ico_up' : 'ico_down') + '" onclick="eocourse.sidebarClass.click(this)"><a ' + (arg.href ? ('onclick="eocourse.sidebarClass.router(\'' + arg.href + '\')"') : '') + '>' + (arg.childList ? '<span class="pull-left  ico"></span>' : '<span class="pull-left unchild-span"></span>') + arg.title + '</a></p>' +
                     '</li>',
                 elem: null
             }
