@@ -13,9 +13,8 @@
     sidebarClass.prototype = {
         init: function() {
             var template = {
-                target: window.location.search.split('?target=')[1]
+                target: decodeURI(window.location.search).split('?target=')[1]
             }
-<<<<<<< HEAD
             editormd.emoji = {      
                 path: "http://www.emoji-cheat-sheet.com/graphics/emojis/",     
                 ext: ".png"        
@@ -25,40 +24,30 @@
                 path: "http://twemoji.maxcdn.com/72x72/",      
                 ext: ".png"        
             };
-=======
->>>>>>> a9d67d0ad71e4861fe4da37232239aa45f4fad71
             if (template.target) {
                 var http = new XMLHttpRequest();
                 http.open("GET", window.location.origin + window.location.pathname + template.target + '.md', true);
                 http.send(null);
                 http.onload = function() {
                     editormd.markdownToHTML("article-container-js", {
-<<<<<<< HEAD
                         markdown: http.responseText,
                         sequenceDiagram: true,      
                         flowChart: true,       
                         emoji: true,       
                         tex: true,     
                         taskList : true
-=======
-                        markdown: http.responseText
->>>>>>> a9d67d0ad71e4861fe4da37232239aa45f4fad71
                     })
                 }
             } else {
-                window.location.href = window.location.href + '?target=/html/index';
+                window.location.href = window.location.href + '?target=/md/index';
             }
 
         },
         paint: function(arg, elem) {
-<<<<<<< HEAD
             var href =  decodeURI(window.location.href).replace(/\//g, '.');
-=======
-            var href = window.location.href.replace(/\//g, '.');
->>>>>>> a9d67d0ad71e4861fe4da37232239aa45f4fad71
             var isCurrent = eval('/' + arg.sref + '/').test(href);
             if (isCurrent && arg.href) {
-                window.document.title = arg.title + '-eolinker-官方教程';
+                window.document.title = arg.title + '-eoLinker官方支持手册';
             }
             var template = {
                 html: '<li class="common-level-' + arg.level + (isCurrent ? (arg.href ? (' elem-active level' + arg.level) : (' level' + arg.level)) : ' hidden') + '" >' +
