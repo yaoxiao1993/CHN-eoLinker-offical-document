@@ -1,4 +1,3 @@
-
 (function() {
     'use strict';
 
@@ -10,33 +9,57 @@
             this.paint(val, document.getElementById('sidebar_js'));
         }
     };
+    try {
+        var href = decodeURI(window.location.search).split('?target=/')[1].split(/&origin=\//g);
+    } catch (e) {
+        var href = '';
+    }
+
     sidebarClass.prototype = {
         init: function() {
             var template = {
-                target: decodeURI(window.location.search).split('?target=')[1]
+                target: null
             }
-            editormd.emoji = {      
-                path: "http://www.emoji-cheat-sheet.com/graphics/emojis/",     
-                ext: ".png"        
-            };     
-       
-            editormd.twemoji = {       
-                path: "http://twemoji.maxcdn.com/72x72/",      
-                ext: ".png"        
+            try {
+                template.target = decodeURI(window.location.search).split('?target=')[1].split(/&origin=/g)[0];
+            } catch (e) {
+                template.target = null;
+            }
+            editormd.emoji = {
+                path: "http://www.emoji-cheat-sheet.com/graphics/emojis/",
+                ext: ".png"
+            };
+
+            editormd.twemoji = {
+                path: "http://twemoji.maxcdn.com/72x72/",
+                ext: ".png"
             };
             if (template.target) {
                 var http = new XMLHttpRequest();
+                console.log()
                 http.open("GET", window.location.origin + window.location.pathname + template.target + '.md', true);
                 http.send(null);
                 http.onload = function() {
-                    editormd.markdownToHTML("article-container-js", {
-                        markdown: http.responseText,
-                        sequenceDiagram: true,      
-                        flowChart: true,       
-                        emoji: true,       
-                        tex: true,     
-                        taskList : true
-                    })
+                    switch (http.status) {
+                        case 200:
+                            {
+                                editormd.markdownToHTML("article-container-js", {
+                                    markdown: http.responseText,
+                                    sequenceDiagram: true,
+                                    flowChart: true,
+                                    emoji: true,
+                                    tex: true,
+                                    taskList: true
+                                })
+                                break;
+                            }
+                        default:
+                            {
+                                document.getElementById('article-container-js').innerHTML=http.responseText.replace(/<(.*)style(.*)>/g,'');
+                                break;
+                            }
+                    }
+
                 }
             } else {
                 window.location.href = window.location.href + '?target=/md/index';
@@ -44,14 +67,27 @@
 
         },
         paint: function(arg, elem) {
-            var href =  decodeURI(window.location.href).replace(/\//g, '.');
-            var isCurrent = eval('/' + arg.sref + '/').test(href);
+            var template = {
+                target: (href[0] || '').replace(/\//g, '.'),
+                origin: (href[1] || '').replace(/\//g, '.'),
+                array: '',
+                icon: (arg.icon || '').replace(/\//g, ''),
+                title: arg.title.replace(/\//g, ''),
+                href: (arg.href || '').replace(/\//g, '.')
+            }
+            template.array = (template.origin || template.target).split('.');
+            var isCurrent = eval('/^' + (template.icon || template.title) + '$/').test(template.array[arg.level + 1]);
+            if (arg.href && isCurrent) {
+                if ((template.origin && !arg.originHref) || (!template.origin && arg.originHref) || !(eval('/' + (template.href) + '$/').test('.' + template.target))) {
+                    isCurrent = false;
+                }
+            }
             if (isCurrent && arg.href) {
                 window.document.title = arg.title + '-eoLinker官方支持手册';
             }
             var template = {
                 html: '<li class="common-level-' + arg.level + (isCurrent ? (arg.href ? (' elem-active level' + arg.level) : (' level' + arg.level)) : ' hidden') + '" >' +
-                '<p level="' + arg.level + '" class="' + (isCurrent ? 'ico_up' : 'ico_down') + '" onclick="eocourse.sidebarClass.click(this)"><a ' + (arg.href ? ('onclick="eocourse.sidebarClass.router(\'' + arg.href + '\')"') : '') + '>' + (arg.childList ? '<span class="pull-left  ico"></span>' : '<span class="pull-left unchild-span"></span>') + arg.title + '</a></p>' +
+                    '<p level="' + arg.level + '" class="' + (isCurrent ? 'ico_up' : 'ico_down') + '" onclick="eocourse.sidebarClass.click(this)"><a ' + (arg.href ? ('onclick="eocourse.sidebarClass.router(\'' + arg.href + '\'' + (arg.originHref ? (',\'' + arg.originHref + '\'') : '') + ')"') : '') + '>' + (arg.childList ? '<span class="pull-left  ico"></span>' : '<span class="pull-left unchild-span"></span>') + arg.title + '</a></p>' +
                     '</li>',
                 elem: null
             }
@@ -79,8 +115,13 @@
                 arg.setAttribute('class', 'ico_down');
             }
         },
-        router: function(href) {
-            window.location.href = window.location.origin + window.location.pathname + '?target=' + href;
+        router: function(href, originHref) {
+            if (originHref) {
+                window.location.href = window.location.origin + window.location.pathname + '?target=' + href + '&origin=' + originHref;
+            } else {
+                window.location.href = window.location.origin + window.location.pathname + '?target=' + href;
+            }
+
         }
     }
     window.eocourse.sidebarClass = new sidebarClass();
