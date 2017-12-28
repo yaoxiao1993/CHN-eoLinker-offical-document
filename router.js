@@ -23,7 +23,7 @@
 					originHref: '/md/接口管理/快速入门/创建接口'
 				}, {
 					title: '基础测试',
-					href: '/md/接口管理/基础API测试/基础测试',
+					href: '/md/接口管理/API基础测试/基础测试',
 					originHref: '/md/接口管理/快速入门/基础测试'
 				}, {
 					title: '添加团队成员',
@@ -85,32 +85,43 @@
 					icon: '版本管理'
 				}]
 			}, {
-				title: '基础API测试',
+				title: 'API基础测试',
 				childList: [{
 					title: '基础测试',
-					href: '/md/接口管理/基础API测试/基础测试'
+					href: '/md/接口管理/API基础测试/基础测试'
 				}, {
 					title: '测试增强插件',
-					href: '/md/接口管理/基础API测试/测试增强插件'
+					href: '/md/接口管理/API基础测试/测试增强插件'
 				}, {
 					title: '参数构造器',
-					href: '/md/接口管理/基础API测试/参数构造器'
+					href: '/md/接口管理/API基础测试/参数构造器'
 				}, {
 					title: '智能表单',
-					href: '/md/接口管理/基础API测试/智能表单'
+					href: '/md/接口管理/API基础测试/智能表单'
 				}, {
 					title: '文件测试',
-					href: '/md/接口管理/基础API测试/文件测试'
+					href: '/md/接口管理/API基础测试/文件测试'
 				}, {
 					title: 'Restful API测试',
-					href: '/md/接口管理/基础API测试/restful测试',
+					href: '/md/接口管理/API基础测试/restful测试',
 					icon: 'restful测试'
 				}, {
 					title: '源数据测试',
-					href: '/md/接口管理/基础API测试/源数据测试',
+					href: '/md/接口管理/API基础测试/源数据测试',
 				}, {
 					title: '测试历史记录',
-					href: '/md/接口管理/基础API测试/测试历史记录',
+					href: '/md/接口管理/API基础测试/测试历史记录',
+				}]
+			}, {
+				title: 'API自动化测试',
+				childList: [{
+					title: '简易模式(UI)',
+					href: '/md/接口管理/API自动化测试/简易自动化测试',
+					icon: '简易自动化测试'
+				}, {
+					title: '高级模式(代码)',
+					href: '/md/接口管理/API自动化测试/高级自动化测试',
+					icon: '高级自动化测试'
 				}]
 			}, {
 				title: '状态码管理',
