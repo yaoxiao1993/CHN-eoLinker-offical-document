@@ -10,7 +10,11 @@
 4. 接口商店-ASP（API Shop）
 
 本支持文档将为各位详细介绍eoLinker的各方面特性，如果在使用的过程中依然存有问题，欢迎各位通过以下方式联系我们，我们将会尽快为您解答：
-1. 官方交流Q群：[284421832](http://shang.qq.com/wpa/qunwpa?idkey=208b23b73761039b9994d71378ccbf7c84c872d5577d557e45168b37fd290c12 "官方交流Q群")
+1. 官方交流Q群：
+[284421832 用户讨论1群(已满)](https://jq.qq.com/?_wv=1027&k=5ieOtY7)
+[284421832 用户讨论2群(已满)](https://jq.qq.com/?_wv=1027&k=5eVxKs3)
+[284421832 用户讨论3群(已满)](https://jq.qq.com/?_wv=1027&k=5X2GVFf)
+[284421832 用户讨论4群(开放)](https://jq.qq.com/?_wv=1027&k=51Kk8Lz)
 2. 官方博客以及社区：[http://blog.eolinker.com/](http://blog.eolinker.com/)
 3. 商务合作邮箱：market@eolinker.com
 
