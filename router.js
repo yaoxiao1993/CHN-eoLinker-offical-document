@@ -7,7 +7,8 @@
 			href: '/md/index',
 			icon: 'index'
 		}, {
-			title: '接口管理',
+			title: '接口管理-基础',
+			icon: '接口管理',
 			childList: [{
 				title: '简介',
 				href: '/md/接口管理/简介'
@@ -124,6 +125,15 @@
 					icon: '高级自动化测试'
 				}]
 			}, {
+				title: 'Mock API',
+				childList: [{
+					title: '基础Mock',
+					href: '/md/接口管理/Mock API/基础Mock',
+				}, {
+					title: '高级Mock',
+					href: '/md/接口管理/Mock API/高级Mock',
+				}]
+			}, {
 				title: '状态码管理',
 				childList: [{
 					title: '分组管理',
@@ -199,19 +209,19 @@
 			icon: '开源版本',
 			childList: [{
 				title: '简介',
-				href: '/md/开源版本/简介'
+				href: '/md/接口管理开源版/简介'
 			}, {
 				title: '部署指南',
-				href: '/md/开源版本/部署指南'
+				href: '/md/接口管理开源版/部署指南'
 			}, {
 				title: '升级指南',
-				href: '/md/开源版本/升级指南'
+				href: '/md/接口管理开源版/升级指南'
 			}, {
 				title: '更新日志',
-				href: '/md/开源版本/更新日志'
+				href: '/md/接口管理开源版/更新日志'
 			}, {
 				title: '常见问题',
-				href: '/md/开源版本/常见问题'
+				href: '/md/接口管理开源版/常见问题'
 			}]
 		}, {
 			title: '接口商店',
