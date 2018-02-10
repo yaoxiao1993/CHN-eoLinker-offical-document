@@ -1,4 +1,4 @@
-(function() {
+﻿(function() {
 	window.eocourse = window.eocourse || {};
 	window.eocourse.sidebarConstant = {
 		id: 'sidebar_js',
@@ -7,7 +7,7 @@
 			href: '/md/index',
 			icon: 'index'
 		}, {
-			title: '接口管理-基础',
+			title: '接口管理-基础教程',
 			icon: '接口管理',
 			childList: [{
 				title: '简介',
@@ -205,8 +205,8 @@
 				}]
 			}]
 		}, {
-			title: '接口管理-开源版本',
-			icon: '开源版本',
+			title: '接口管理-开源版',
+			icon: '接口管理开源版',
 			childList: [{
 				title: '简介',
 				href: '/md/接口管理开源版/简介'
@@ -224,29 +224,8 @@
 				href: '/md/接口管理开源版/常见问题'
 			}]
 		}, {
-			title: '接口商店',
-			childList: [{
-				title: '常见问题',
-				href: '/md/接口商店/常见问题'
-			}, {
-				title: '身份认证',
-				href: '/md/接口商店/身份认证'
-			}, {
-				title: '应用认证',
-				href: '/md/接口商店/应用认证'
-			}, {
-				title: '使用流程',
-				href: '/md/接口商店/AS使用流程',
-				icon: 'AS使用流程'
-			}, {
-				title: '短信API使用流程',
-				href: '/md/接口商店/短信API使用流程'
-			}, {
-				title: '群发短信使用流程',
-				href: '/md/接口商店/群发短信使用流程'
-			}]
-		}, {
-			title: '用户',
+			title: '账户管理',
+			icon: '用户',
 			childList: [{
 				title: '基本账户操作',
 				childList: [{
