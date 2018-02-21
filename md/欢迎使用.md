@@ -11,11 +11,18 @@
 
 本支持文档将为各位详细介绍eoLinker的各方面特性，如果在使用的过程中依然存有问题，欢迎各位通过以下方式联系我们，我们将会尽快为您解答：
 1. 官方交流Q群：
-[用户讨论1群(已满)](https://jq.qq.com/?_wv=1027&k=5ieOtY7)
-[用户讨论2群(已满)](https://jq.qq.com/?_wv=1027&k=5eVxKs3)
-[用户讨论3群(已满)](https://jq.qq.com/?_wv=1027&k=5X2GVFf)
+[用户讨论1群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=5ieOtY7)
+[用户讨论2群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=5eVxKs3)
+[用户讨论3群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=5X2GVFf)
 [用户讨论4群(开放)](https://jq.qq.com/?_wv=1027&k=51Kk8Lz)
-2. 官方博客以及社区：[http://blog.eolinker.com/](http://blog.eolinker.com/)
-3. 商务合作邮箱：market@eolinker.com
+[用户讨论5群(开放)](https://jq.qq.com/?_wv=1027&k=5lDoleL)
+
+2. 官方博客以及社区：
+[http://blog.eolinker.com/](http://blog.eolinker.com/)
+
+3. 邮箱：
+市场商务合作: market@eolinker.com
+产品咨询购买: sales@eolinker.com
+接口商店开放平台入驻: ops@eolinker.com
 
 祝各位能够通过eoLinker为项目开发带来真正的便利与变革，共同打造一个更为联通的世界。
