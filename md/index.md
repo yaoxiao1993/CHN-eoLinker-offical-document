@@ -1,6 +1,9 @@
 ## 欢迎使用eoLinker
 ![](http://data.eolinker.com/course/5afzRpSe95a0abcd09eab17bbd05968b5ce0cb2fa4e41af)
 
+## 欢迎使用eoLinker
+![](http://data.eolinker.com/course/5afzRpSe95a0abcd09eab17bbd05968b5ce0cb2fa4e41af)
+
 **eoLinker全称为easy open linker，意为简易、开放的连接器，通过帮助企业开发人员在线管理接口文档、进行自动化测试、团队协作等，提高企业项目的接口管理水平，提升开发速度并且降低运维成本。**
 
 **eoLinker旗下拥有四大产品解决方案，能够为企业提供API全生命周期的管理服务：**
@@ -14,7 +17,7 @@
 [用户讨论1群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=5ieOtY7)
 [用户讨论2群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=5eVxKs3)
 [用户讨论3群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=5X2GVFf)
-[用户讨论4群(开放)](https://jq.qq.com/?_wv=1027&k=51Kk8Lz)
+[用户讨论4群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=51Kk8Lz)
 [用户讨论5群(开放)](https://jq.qq.com/?_wv=1027&k=5lDoleL)
 
 2. 官方博客以及社区：
