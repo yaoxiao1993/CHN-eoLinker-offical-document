@@ -1,9 +1,6 @@
 ## 欢迎使用eoLinker
 ![](http://data.eolinker.com/course/5afzRpSe95a0abcd09eab17bbd05968b5ce0cb2fa4e41af)
 
-## 欢迎使用eoLinker
-![](http://data.eolinker.com/course/5afzRpSe95a0abcd09eab17bbd05968b5ce0cb2fa4e41af)
-
 **eoLinker全称为easy open linker，意为简易、开放的连接器，通过帮助企业开发人员在线管理接口文档、进行自动化测试、团队协作等，提高企业项目的接口管理水平，提升开发速度并且降低运维成本。**
 
 **eoLinker旗下拥有四大产品解决方案，能够为企业提供API全生命周期的管理服务：**
