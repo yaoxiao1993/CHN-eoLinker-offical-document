@@ -8,8 +8,8 @@ eoLinker提供了强大的MockAPI功能，能够真实模拟API的返回结果�
 6. 支持每次请求随机生成返回结果（专业版）
 ...
 
-------------
-####编辑Mock数据
+---
+#### 编辑Mock数据
 
 进入 **接口编辑页面**，点击上方 **高级Mock** 选项卡，进入到Mock设置页面：
 
@@ -38,8 +38,8 @@ eoLinker提供了强大的MockAPI功能，能够真实模拟API的返回结果�
 
 ![](http://data.eolinker.com/course/nyc1jJU9af67656cc193682d49cb7f3a57e5f64de45d1c5)
 
-------------
+---
 
-####调用MockAPI
+#### 调用MockAPI
 进入接口详情页，点击上方的Mock标签，在下方的Mock部分可以看到有Mock Api的请求地址，复制该地址即可访问Mock API得到虚拟数据：
 ![](http://data.eolinker.com/course/YtH4BMy06e6dcea02b1f5f879b62f8aceb12150a588bab1)
