@@ -15,7 +15,7 @@
 [用户讨论2群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=5eVxKs3)
 [用户讨论3群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=5X2GVFf)
 [用户讨论4群(已满，暂停加入)](https://jq.qq.com/?_wv=1027&k=51Kk8Lz)
-[用户讨论5群(开放)](https://jq.qq.com/?_wv=1027&k=5lDoleL)
+[用户讨论5群：707530721(开放)](https://jq.qq.com/?_wv=1027&k=5lDoleL)
 
 2. 官方博客以及社区：
 [http://blog.eolinker.com/](http://blog.eolinker.com/)
