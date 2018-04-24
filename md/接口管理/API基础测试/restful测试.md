@@ -3,11 +3,11 @@
 
 eoLinker会根据请求参数自动替换url中的restful参数，restful类型的请求参数表示为： **{参数名}**
 
-如下图所示，请求地址中有两个restful参数：{addr}以及{name}，请求参数中也有同名的参数以及额外的token参数：
+如下图所示，请求地址中有两个restful参数：{a}以及{b}，请求参数中也有同名的参数以及额外的token参数：
 
 在实际的发送过程中，eolinker会将url替换为
-> www.eolinker.com/www.eolinker.com/helloworld
+> www.eolinker.com/123/456
 
 并且将token参数以body的方式发送到目标的地址。
 
-![](http://data.eolinker.com/course/EjY1qeAa52d06cbeedd4eb2f302b5d7c9ba4e8f015ac7d5)
+![](http://data.eolinker.com/course/zfshXhHaf7c3daab1a06ff195103dc0102f7ffccaa7238e)
